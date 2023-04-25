@@ -3,12 +3,13 @@ import ShoppingList from "./ShoppingList";
 import itemData from "../data/items";
 import Header from "./Header";
 
-
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   function onDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
+      return(
+       isDarkMode ? "Dark" : "Light");
   }
 
   return (
